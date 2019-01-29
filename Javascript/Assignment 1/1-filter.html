@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    
+    <title>Project</title>
+<body>
+<script>
+
+var arr = [58,'','abcd',true,null,false,0];
+
+function fill(val){
+    
+    if(typeof(val) == "number" && val!=0 ) return val;
+    if(typeof(val) == "string" ) return val;
+    if(val) return true;
+}
+var filtered = arr.filter(fill);
+console.log(filtered);
+
+</script>
+</body>
+</html>

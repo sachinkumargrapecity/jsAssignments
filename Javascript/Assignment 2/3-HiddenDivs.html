@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title> Assignment 2</title>
+    </head>
+
+    <body>
+<div>Div 1 <button onclick="hideDiv(0)">Hide1</button></div>
+<div>Div 2 <button onclick="hideDiv(1)">Hide2</button></div>
+<div>Div 3 <button onclick="hideDiv(2)">Hide3</button></div>
+
+
+
+
+<script>
+        
+        
+        // first hide last two
+        document.getElementsByTagName("div")[1].style.visibility = "hidden";
+        document.getElementsByTagName("div")[2].style.visibility = "hidden";
+
+        // function will hide the current and make other two visible
+        function hideDiv(hide){
+    
+            document.getElementsByTagName("div")[hide].style.visibility = "hidden";
+
+            document.getElementsByTagName("div")[(1+hide)%3].style.visibility = "visible";
+            
+        }
+    </script>
+        </body>
+        </html>

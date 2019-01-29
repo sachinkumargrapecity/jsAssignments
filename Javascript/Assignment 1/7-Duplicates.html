@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    
+    <title>Project</title>
+<body>
+<script>
+ var arr = ['a','b','c','a','e','b','d','c','c'];
+var param = function(date){
+    var dups = [];
+    for(i=0;i<255;i++){
+        dups[i] = 0;
+    }
+
+    for(i=0;i<arr.length;i++){
+        dups[arr[i].charCodeAt()]++;
+    }
+    console.log("Duplicates are:-");
+    for(i=0;i<=256;i++){
+        if(dups[i]>1) console.log(String.fromCharCode(i));
+    }
+}
+param();
+
+</script>
+</body>
+</html>

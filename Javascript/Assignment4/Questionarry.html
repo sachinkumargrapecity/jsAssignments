@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title> Answer the 5 questions.</title>
+    </head>
+    <body>
+        <div><div id="showQuestion"></div>
+        <div id="showOptions">
+            <form id="options" onsubmit="return false;">
+                <input  type="radio"  name="answer" value="1" ><lable id="option1"></lable><br>
+                <input type="radio"  name="answer" value="2" ><lable id="option2"></lable><br>
+                <input type="radio"  name="answer" value="3" ><lable id="option3"></lable><br>
+                <input type="radio"  name="answer" value="4" ><lable id="option4"></lable><br>
+                <button onclick="answerSubmitted.checkTheAnswer()">Submit Answer</button><span id="isCorrectOrIncorrect"></span>
+            </form>
+            
+        </div>
+
+        </div>
+        <button onclick="nextPreviousActions.firstQuestion()">First Question</button>
+        <button onclick="nextPreviousActions.previousQuestion()">Previous</button>
+        <button onclick="nextPreviousActions.nextQuestion()">Next</button>
+        <button onclick="nextPreviousActions.lastQuestion()">Last Question</button>
+        </div>
+        <script src="js/app.js"></script>
+    </body> 
+    </html>

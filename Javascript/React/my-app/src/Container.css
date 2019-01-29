@@ -1,0 +1,20 @@
+#container{
+    border:blueviolet;
+    border-width: 2px;
+    border-style: groove;
+    margin: 0 auto;
+    position:absolute;
+    width: 70%;
+}
+
+#container:hover{
+    border: red;
+    border-style: dotted;
+}
+
+body {
+ background-color: antiquewhite inset;
+ width:70%;
+ margin: 0 auto;
+ margin-top: 2%;
+}

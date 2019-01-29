@@ -1,0 +1,42 @@
+6.	<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8"/>
+      <title>About Me</title>
+      <style>
+        .list-item{
+            color:red;
+        }  
+      </style>
+    </head>
+    <body>
+      <h1>About Me</h1>
+      
+      <ul>
+        <li>Nickname: <span id="nickname"></span>
+        <li>Favorites:  <span id="favorites"></span>
+        <li>Hometown: <span id="hometown"></span>
+      </ul>
+
+
+      <script>
+          document.getElementsByTagName("body")[0].style.fontFamily="Arial, sans-serif";
+          // own information
+          document.getElementById("nickname").innerHTML = "Rocky";
+          document.getElementById("favorites").innerHTML = "Cricket";
+          document.getElementById("hometown").innerHTML = "Noida";
+
+          // iterate
+          length = document.getElementsByTagName("li").length;
+          for(i = 0;i<length;i++){
+              document.getElementsByTagName("li")[i].className = "list-item";
+          }
+
+          // create element
+          elemen = document.createElement('img');
+          elemen.src = "capture.PNG";
+            document.body.appendChild(elemen);
+          </script>
+      
+    </body>
+  </html>

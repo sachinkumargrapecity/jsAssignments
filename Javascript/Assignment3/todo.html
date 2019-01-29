@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>To Do</title>
+        
+    </head>
+    <body style="width:70%;margin:0 auto;">
+        <div align="center">
+        <form id="addForm" onsubmit="return false">
+            <label style="font-size:20px;color:brown;background-color: cornsilk;">To Do List</label><br>
+           <input id="title" type="text" placeholder="Title" style="line-height: 20px;width:50%;border-color: aqua;" required></input><br><br>
+            <input id ="body" type="text" placeholder="Body" style="line-height: 20px;width:50%;border-color: aqua;" required>
+        </input><br>
+            <button onclick="callApi()"> Add Item</input>
+        </form>
+    </div>
+    <div id="listOfItems" align="center">
+        <table id="tableOfItems" style="border:darkgoldenrod solid 1px;width:100%;table-layout: fixed;text-align:center">
+            <tr><th>Title</th><th>To Do</th><th>Delete</th></tr>
+
+        </table>
+        <button onclick='clearList()'>Clear whole List</button>
+    </div>
+    <script src="app.js"></script>
+    </body>
+</html>

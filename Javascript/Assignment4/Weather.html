@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Weather app</title>
+        <link rel="stylesheet" href="css/styleWeather.css" type="text/css">
+        <link rel="stylesheet" href="css/all.min.css" tpe="text/css">
+    </head>
+    <body>
+<div>
+    <div id="heading">Weather Forecast For Lagos</div>
+    <div id="imageDiv" style="color:white;font-size: 6rem;"><i id="image"></i></div>
+    <div>
+        <div id="information">
+            <span id="time" style="float:left;" class="info"></span> 
+            <span id="temperature" style="float:inherit;" class="info" onclick="changeBaseVar.change()"></span>
+            <span id="weatherInfo" style="float: right;" class="info"></span>
+        </div>
+    </div>
+    <div id="search">
+            <div id="heading" style="font-size:26px;color:#105F62;text-align: left;padding:10px;">Find a Forecast</div>
+        <div id="searchBox">
+                
+            <form onsubmit="return false" id="searchForm">
+                    <input id = 'cityName' type="text" placeholder="SearchForLocation" style="margin:0 auto;width:80%;line-height: 30px;">
+                    <button id="btn" onclick="searchForNewCity.callApi()">Search</button>
+            </form>
+            
+        </div>
+    </div>
+</div>
+        <script src="js/weather.js"></script>
+    </body>
+</html>

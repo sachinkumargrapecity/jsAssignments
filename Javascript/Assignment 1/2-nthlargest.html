@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    
+    <title>Project</title>
+<body>
+<script>
+var arr = [43,56,23,89,88,90,99,652];
+var nthLargest = function(arr,nth){
+    
+    // find the largest
+     arr.sort(function(a,b){return a-b;});
+  
+    console.log(arr[nth-1]);
+}
+nthLargest(arr,4);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    
+    <title>Project</title>
+<body>
+<script>
+ 
+var param = function(strin, chop=0){
+    if(chop<1) return strin;
+    i=0;
+    while(i<strin.length){
+        console.log(strin.substring(i,i+chop));
+        i+=chop;
+    }
+}
+console.log(param('anilanilanil', 2));
+
+</script>
+</body>
+</html>

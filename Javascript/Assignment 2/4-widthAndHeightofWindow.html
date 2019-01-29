@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> Assignment 2</title>
+    </head>
+
+    <body onload="showSize()">
+<div id="info">>Hide1</button></div>
+
+
+
+
+<script>
+        
+        function showSize(){
+        document.getElementById("info").innerHTML = window.outerHeight.toString() + 'x' + window.outerWidth.toString();
+        }
+
+     window.addEventListener("resize",showSize);
+    </script>
+        </body>
+        </html>

@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    
+    <title>Project</title>
+<body>
+<script>
+ str = "AaBbc";
+var param = function(str){
+    arr = str.split("");
+    for(i=0;i<str.length;i++){
+        var code = str.charCodeAt(i);
+        if(code>64 && code<91){
+            arr[i] = arr[i].toLowerCase();
+            
+        }
+        else if(code>96 && code<123){
+            
+            arr[i] = arr[i].toUpperCase();
+        }
+    }
+    console.log(arr.join(""));
+}
+param(str);
+
+</script>
+</body>
+</html>

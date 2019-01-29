@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title> Assignment 2</title>
+    </head>
+
+    <body onload="showSize()">
+<div id="info">>
+    
+Hi how are you?<br>
+<b>I am Fine</b><br>
+What is your name<br>
+<b> It is Ram and this is another bold tag</b><br>
+Ok fine.<br>
+<a href="#" onmouseover="highlight()" onmouseout="removeHighlight()">And this is the link</a>
+
+</button></div>
+
+
+
+
+<script>
+        length = document.getElementsByTagName("b").length;
+        function highlight(){
+         
+         for(i=0;i<length;i++){
+             document.getElementsByTagName("b")[i].style.backgroundColor = "Blue";
+         }
+        }
+
+        function removeHighlight(){
+         
+         for(i=0;i<length;i++){
+             document.getElementsByTagName("b")[i].style.backgroundColor = "white";
+         }
+        }
+
+    </script>
+        </body>
+        </html>

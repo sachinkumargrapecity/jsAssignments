@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    
+    <title>Project</title>
+<body>
+<script>
+ 
+var param = function(string1,string2,pos=0){
+    if(pos==0) return string2 + ' ' + string1;
+
+    subS1 = string1.substr(0,pos);
+    subS2 = string1.substring(pos,string1.length);
+    return subS1 + string2 + subS2;
+}
+console.log(param('We are doing some exercises.','JavaScript ', 18));
+
+</script>
+</body>
+</html>
