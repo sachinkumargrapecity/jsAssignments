@@ -1,0 +1,21 @@
+.octicon{
+    display: inline-block;
+    fill: currentColor;
+    vertical-align: text-top;
+}
+
+.open.octicon {
+    color: #28a745;
+}
+
+.textLeft{
+    text-align: left;
+}
+
+.black{
+    color:#24292e!important;
+    font-size: 14px;
+    text-decoration: none!important;
+    font-weight:600;
+    vertical-align: center;
+}
